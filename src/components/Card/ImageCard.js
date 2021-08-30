@@ -8,7 +8,7 @@ import poster9 from "../../assets/Slices/poster9.png";
 import MissingPoster from "../../assets/Slices/placeholder_for_missing_poster.png";
 
 function ImageCard(props) {
-  return props.moviesList["content-items"].content.map((item, key) => {
+  return props.moviesList.map((item, key) => {
     return (
       <Grid.Column key={key} className="card-column">
         <img

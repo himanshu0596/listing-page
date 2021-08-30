@@ -5,11 +5,10 @@ import navbar from "../../assets/Slices/nav_bar.png";
 import search from "../../assets/Slices/search.png";
 
 function Header(props) {
-  const pageData = props.movieList;
   const searchList = (e) => {
     const searchString =
       e.target.value.charAt(0).toUpperCase() + e.target.value.slice(1);
-    props.setMovies(pageData.filter(({ name }) => name.includes(searchString)));
+    props.setSearch(searchString);
   };
   return (
     <Grid columns={3} className="header">

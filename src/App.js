@@ -5,17 +5,20 @@ import { useStore } from "react-redux";
 
 function App() {
   const store = useStore();
+  const [searchString, setSearchString] = useState("");
   const [data, setData] = useState(
     store.getState().listingReducer.listData.page["content-items"].content
   );
   return (
     <div>
       <Header
-        movieList={data}
-        setMovies={setData}
         title={store.getState().listingReducer.listData.page.title}
+        setSearch={setSearchString}
       />
-      <ListingPage movieList={data} setMovies={setData} />
+      <ListingPage
+        movieList={data.filter(({ name }) => name.includes(searchString))}
+        searchString={searchString}
+      />
     </div>
   );
 }
