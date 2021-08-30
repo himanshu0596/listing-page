@@ -1,10 +1,10 @@
 import { Grid } from "semantic-ui-react";
-import poster4 from "../../assets/Slices/poster4.png";
-import poster5 from "../../assets/Slices/poster5.png";
-import poster6 from "../../assets/Slices/poster6.png";
-import poster7 from "../../assets/Slices/poster7.png";
-import poster8 from "../../assets/Slices/poster8.png";
-import poster9 from "../../assets/Slices/poster9.png";
+import poster4 from "../../assets/Slices/poster4.jpg";
+import poster5 from "../../assets/Slices/poster5.jpg";
+import poster6 from "../../assets/Slices/poster6.jpg";
+import poster7 from "../../assets/Slices/poster7.jpg";
+import poster8 from "../../assets/Slices/poster8.jpg";
+import poster9 from "../../assets/Slices/poster9.jpg";
 import MissingPoster from "../../assets/Slices/placeholder_for_missing_poster.png";
 
 function ImageCard(props) {

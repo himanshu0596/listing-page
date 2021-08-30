@@ -6,7 +6,7 @@ import { useStore } from "react-redux";
 function App() {
   const store = useStore();
   const [searchString, setSearchString] = useState("");
-  const [data, setData] = useState(
+  const [data] = useState(
     store.getState().listingReducer.listData.page["content-items"].content
   );
   return (

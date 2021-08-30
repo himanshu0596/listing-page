@@ -2,9 +2,9 @@ import React, { Suspense, useState, useEffect } from "react";
 import { Grid } from "semantic-ui-react";
 import actionList from "../../actions";
 import { useStore, useDispatch } from "react-redux";
-import poster1 from "../../assets/Slices/poster1.png";
-import poster2 from "../../assets/Slices/poster2.png";
-import poster3 from "../../assets/Slices/poster3.png";
+import poster1 from "../../assets/Slices/poster1.jpg";
+import poster2 from "../../assets/Slices/poster2.jpg";
+import poster3 from "../../assets/Slices/poster3.jpg";
 
 let pages = [];
 const ImageCard = React.lazy(() => import("../Card/ImageCard"));
@@ -51,6 +51,7 @@ function ListingPage(props) {
           return (
             <Grid.Column key={key} className="card-column">
               <img
+                alt="Not Available"
                 src={
                   item["poster-image"] === "poster1.jpg"
                     ? poster1
